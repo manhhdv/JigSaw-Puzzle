@@ -1,0 +1,208 @@
+{
+  "frames": [
+    {
+      "filename": "title_game",
+      "frame": {
+        "x": 0, "y": 0, "w": 786, "h": 144
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0, "y": 0, "w": 786, "h": 144
+      },
+      "sourceSize": {
+        "w": 786, "h": 144
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "title_game_1",
+      "frame": {
+        "x": 357, "y": 755, "w": 302, "h": 98
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 357, "y": 755, "w": 302, "h": 98
+      },
+      "sourceSize": {
+        "w": 302, "h": 98
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "title_game_2",
+      "frame": {
+        "x": 962, "y": 0, "w": 39, "h": 134
+      },
+      "rotated": 0,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 962, "y": 0, "w": 39, "h": 134
+      },
+      "sourceSize": {
+        "w": 39, "h": 134
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "play_btn_c",
+      "frame": {
+        "x": 176, "y": 379, "h": 317, "w": 125
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 176, "y": 379, "h": 317, "w": 125
+      },
+      "sourceSize": {
+        "h": 317, "w": 125
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "play_btn_r",
+      "frame": {
+        "x": 176, "y": 379, "h": 317, "w": 125
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 176, "y": 379, "h": 317, "w": 125
+      },
+      "sourceSize": {
+        "h": 317, "w": 125
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "puzzlesBtn_c",
+      "frame": {
+        "x": 0, "y": 144, "w": 357, "h": 176
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0, "y": 144, "w": 357, "h": 176
+      },
+      "sourceSize": {
+        "w": 357, "h": 176
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "puzzlesBtn_r",
+      "frame": {
+        "x": 0, "y": 764, "h": 357, "w": 176
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0, "y": 764, "h": 357, "w": 176
+      },
+      "sourceSize": {
+        "h": 357, "w": 176
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+    "filename": "acBtn_c",
+    "frame": {
+      "x": 786, "y": 0, "h": 382, "w": 176
+    },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": {
+      "x": 786, "y": 0, "h": 382, "w": 176
+    },
+    "sourceSize": {
+      "h": 382, "w": 176
+    },
+    "pivot": {
+      "x": 0, "y": 0
+    }
+    },
+    {
+      "filename": "acBtn_r",
+      "frame": {
+        "x": 0, "y": 382, "h": 382, "w": 176
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0, "y": 764, "h": 382, "w": 176
+      },
+      "sourceSize": {
+        "h": 382, "w": 176
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "cloud",
+      "frame": {
+        "x": 357, "y": 144, "h": 144, "w": 211
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 357, "y": 144, "h": 144, "w": 211
+      },
+      "sourceSize": {
+        "h": 144, "w": 211
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "returnBtn_c",
+      "frame": {
+        "x": 577, "y": 353, "h": 94, "w": 79
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 577, "y": 353, "h": 94, "w": 79
+      },
+      "sourceSize": {
+        "h": 94, "w": 79
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    },
+    {
+      "filename": "returnBtn_r",
+      "frame": {
+        "x": 563, "y": 447, "w": 94, "h": 79
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 563, "y": 447, "w": 94, "h": 79
+      },
+      "sourceSize": {
+        "w": 94, "h": 79
+      },
+      "pivot": {
+        "x": 0, "y": 0
+      }
+    }
+  ]
+}
