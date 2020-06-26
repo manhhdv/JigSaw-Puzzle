@@ -4,7 +4,7 @@ class bootGame extends Phaser.Scene{
     }
     preload(){
         this.load.image('bg', 'assets/res/bg_0.png');
-        this.load.atlas('lits', 'assets/res/lit.png', 'assets/data_json/lit.json');
+        this.load.atlas('lits', 'assets/res/lit.png', 'data_json/lit.json');
     }
     create(){
         console.log('start');
