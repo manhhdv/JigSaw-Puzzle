@@ -1,0 +1,41 @@
+{
+  "file_img": {
+    "files": [
+      {
+        "type": "image",
+        "key": "bg",
+        "url": "assets/res/bg_0.png"
+      },
+      {
+        "type": "image",
+        "key": "bg1",
+        "url": "assets/res/bg_1.png"
+      },
+      {
+        "type": "image",
+        "key": "slbg",
+        "url": "assets/res/select_bg.png"
+      },
+      {
+        "type": "image",
+        "key": "slb",
+        "url": "assets/res/selectBorder.png"
+      },
+      {
+        "type": "image",
+        "key": "album_bg",
+        "url": "assets/res/album_bg.png"
+      },
+      {
+        "type": "image",
+        "key": "select_bg",
+        "url": "assets/res/select_bg.png"
+      },
+      {
+        "type": "image",
+        "key": "selectBorder",
+        "url": "assets/res/selectBorder.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "abcPuzzleOra": {
+    "files": [
+      {
+        "type": "image",
+        "key": "cPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/c.png"
+      },
+      {
+        "type": "image",
+        "key": "dPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/d.png"
+      }
+    ]
+  }
+}
