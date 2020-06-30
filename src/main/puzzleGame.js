@@ -33,10 +33,10 @@ class PuzzleGame extends Phaser.Scene {
         abcPuzzle[3].setName("3");
         abcPuzzle[4].setName("4");
 
-        this.setDragandDrop(this, abcPuzzle[1], "1", 1, 1,0,112);
-        this.setDragandDrop(this, abcPuzzle[2], "2", 1, 0,0,0);
-        this.setDragandDrop(this, abcPuzzle[3], "3", 0, 0,0,0);
-        this.setDragandDrop(this, abcPuzzle[4], "4", 0, 1,86,0);
+        this.setDragandDrop(this, abcPuzzle[1], "1", 522, 477);
+        this.setDragandDrop(this, abcPuzzle[2], "2", 582, 271);
+        this.setDragandDrop(this, abcPuzzle[3], "3",309,219);
+        this.setDragandDrop(this, abcPuzzle[4], "4", 253,432);
 
     }
 
@@ -47,17 +47,17 @@ class PuzzleGame extends Phaser.Scene {
         })
     }
 
-    setDragandDrop(sceneName, abcPuzzle,name ,ax, by,diffx,diffy) {
+    setDragandDrop(sceneName, abcPuzzle,name ,ax, by) {
         sceneName.input.setDraggable(abcPuzzle);
-        var zone = sceneName.add.zone(72 + ax * 336, 75 + by * 275, 336, 275).setRectangleDropZone(336, 275);
+        var zone = sceneName.add.zone(ax, by, 336, 275).setDropZone();
         zone.setName(name);
+
         sceneName.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-            gameObject.x = dragX ;//- 200;
-            gameObject.y = dragY ;//- 100;
+            gameObject.x = pointer.x;
+            gameObject.y = pointer.y;
             sceneName.children.bringToTop(gameObject);
         });
         this.startDrag(abcPuzzle);
-
         this.input.on('dragend', function (pointer, gameObject, dropped) {
             if (!dropped) {
                 gameObject.x = gameObject.input.dragStartX;
@@ -65,16 +65,15 @@ class PuzzleGame extends Phaser.Scene {
                 gameObject.setScale(0.25);
                 gameObject.setAngle(Phaser.Math.Between(20, 40));
             }
-
         });
         this.input.on('drop', function (pointer, gameObject, dropZone, target) {
-
+            // gameObject.x-=200;
+            // gameObject.y-=100;
             if (dropZone.name === gameObject.name) {
-                gameObject.x = dropZone.x-diffx;
-                gameObject.y = dropZone.y-diffy;
+                gameObject.x = dropZone.x;
+                gameObject.y = dropZone.y;
                 gameObject.input.enabled = false;
                 console.log(dropZone.name ,gameObject.name);
-                console.log(diffx,diffy);
             } else {
                 gameObject.x = gameObject.input.dragStartX;
                 gameObject.y = gameObject.input.dragStartY;
@@ -125,7 +124,7 @@ class PuzzleGame extends Phaser.Scene {
 
     setAbcPuzzle(object, name, ax, ay) {
         var abcPuzzle = object.add.image(game.config.width / ax, game.config.height / ay, name).setScale(0.25);
-        abcPuzzle.setOrigin(0);
+        // abcPuzzle.setOrigin(0);
         abcPuzzle.setAngle(Phaser.Math.Between(20, 40));
         return abcPuzzle;
     }
