@@ -1,0 +1,139 @@
+{
+  "abcPuzzleOra": {
+    "files": [
+      {
+        "type": "image",
+        "key": "ePuzzleOra",
+        "url": "assets/res/abcPuzzleOra/e.png"
+      },
+      {
+        "type": "image",
+        "key": "cPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/c.png"
+      },
+      {
+        "type": "image",
+        "key": "dPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/d.png"
+      },
+      {
+        "type": "image",
+        "key": "aPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/a.png"
+      },
+      {
+        "type": "image",
+        "key": "bPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/b.png"
+      },
+      {
+        "type": "image",
+        "key": "ePuzzleOra",
+        "url": "assets/res/abcPuzzleOra/e.png"
+      },
+      {
+        "type": "image",
+        "key": "gPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/g.png"
+      },
+      {
+        "type": "image",
+        "key": "hPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/h.png"
+      },
+      {
+        "type": "image",
+        "key": "fPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/f.png"
+      },
+      {
+        "type": "image",
+        "key": "iPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/i.png"
+      },
+      {
+        "type": "image",
+        "key": "jPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/j.png"
+      },
+      {
+        "type": "image",
+        "key": "kPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/k.png"
+      },{
+        "type": "image",
+        "key": "lPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/l.png"
+      },
+      {
+        "type": "image",
+        "key": "mPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/m.png"
+      },
+      {
+        "type": "image",
+        "key": "nPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/n.png"
+      },
+      {
+        "type": "image",
+        "key": "oPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/o.png"
+      },
+      {
+        "type": "image",
+        "key": "pPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/p.png"
+      },
+      {
+        "type": "image",
+        "key": "qPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/q.png"
+      },
+      {
+        "type": "image",
+        "key": "rPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/r.png"
+      },
+      {
+        "type": "image",
+        "key": "sPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/s.png"
+      },
+      {
+        "type": "image",
+        "key": "tPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/t.png"
+      },
+      {
+        "type": "image",
+        "key": "uPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/v.png"
+      },{
+        "type": "image",
+        "key": "vPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/v.png"
+      },
+      {
+        "type": "image",
+        "key": "wPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/w.png"
+      },
+      {
+        "type": "image",
+        "key": "xPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/x.png"
+      },
+      {
+        "type": "image",
+        "key": "yPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/y.png"
+      },
+      {
+        "type": "image",
+        "key": "zPuzzleOra",
+        "url": "assets/res/abcPuzzleOra/z.png"
+      }
+    ]
+  }
+}

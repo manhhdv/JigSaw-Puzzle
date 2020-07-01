@@ -1,0 +1,526 @@
+{
+  "abcPuzzle": {
+    "files": [
+      {
+        "type": "image",
+        "key": "cPuzzle1",
+        "url": "assets/res/abcPuzzle/c-1.png"
+      },
+      {
+        "type": "image",
+        "key": "cPuzzle2",
+        "url": "assets/res/abcPuzzle/c-2.png"
+      },
+      {
+        "type": "image",
+        "key": "cPuzzle3",
+        "url": "assets/res/abcPuzzle/c-3.png"
+      },
+      {
+        "type": "image",
+        "key": "cPuzzle4",
+        "url": "assets/res/abcPuzzle/c-4.png"
+      },
+      {
+        "type": "image",
+        "key": "dPuzzle1",
+        "url": "assets/res/abcPuzzle/d-1.png"
+      },
+      {
+        "type": "image",
+        "key": "dPuzzle2",
+        "url": "assets/res/abcPuzzle/d-2.png"
+      },
+      {
+        "type": "image",
+        "key": "dPuzzle3",
+        "url": "assets/res/abcPuzzle/d-3.png"
+      },
+      {
+        "type": "image",
+        "key": "dPuzzle4",
+        "url": "assets/res/abcPuzzle/d-4.png"
+      },
+      {
+        "type": "image",
+        "key": "aPuzzle1",
+        "url": "assets/res/abcPuzzle/a-1.png"
+      },
+      {
+        "type": "image",
+        "key": "aPuzzle2",
+        "url": "assets/res/abcPuzzle/a-2.png"
+      },
+      {
+        "type": "image",
+        "key": "aPuzzle3",
+        "url": "assets/res/abcPuzzle/a-3.png"
+      },
+      {
+        "type": "image",
+        "key": "aPuzzle4",
+        "url": "assets/res/abcPuzzle/a-4.png"
+      },
+      {
+        "type": "image",
+        "key": "bPuzzle1",
+        "url": "assets/res/abcPuzzle/b-1.png"
+      },
+      {
+        "type": "image",
+        "key": "bPuzzle2",
+        "url": "assets/res/abcPuzzle/b-2.png"
+      },
+      {
+        "type": "image",
+        "key": "bPuzzle3",
+        "url": "assets/res/abcPuzzle/b-3.png"
+      },
+      {
+        "type": "image",
+        "key": "bPuzzle4",
+        "url": "assets/res/abcPuzzle/b-4.png"
+      },
+      {
+        "type": "image",
+        "key": "ePuzzle1",
+        "url": "assets/res/abcPuzzle/e-1.png"
+      },
+      {
+        "type": "image",
+        "key": "fPuzzle1",
+        "url": "assets/res/abcPuzzle/f-1.png"
+      },
+      {
+        "type": "image",
+        "key": "gPuzzle1",
+        "url": "assets/res/abcPuzzle/g-1.png"
+      },
+      {
+        "type": "image",
+        "key": "hPuzzle1",
+        "url": "assets/res/abcPuzzle/h-1.png"
+      },
+      {
+        "type": "image",
+        "key": "iPuzzle1",
+        "url": "assets/res/abcPuzzle/i-1.png"
+      },
+      {
+        "type": "image",
+        "key": "jPuzzle1",
+        "url": "assets/res/abcPuzzle/j-1.png"
+      },
+      {
+        "type": "image",
+        "key": "kPuzzle1",
+        "url": "assets/res/abcPuzzle/k-1.png"
+      },
+      {
+        "type": "image",
+        "key": "lPuzzle1",
+        "url": "assets/res/abcPuzzle/l-1.png"
+      },
+      {
+        "type": "image",
+        "key": "mPuzzle1",
+        "url": "assets/res/abcPuzzle/m-1.png"
+      },
+      {
+        "type": "image",
+        "key": "nPuzzle1",
+        "url": "assets/res/abcPuzzle/n-1.png"
+      },
+      {
+        "type": "image",
+        "key": "oPuzzle1",
+        "url": "assets/res/abcPuzzle/o-1.png"
+      },
+      {
+        "type": "image",
+        "key": "pPuzzle1",
+        "url": "assets/res/abcPuzzle/p-1.png"
+      },
+      {
+        "type": "image",
+        "key": "qPuzzle1",
+        "url": "assets/res/abcPuzzle/q-1.png"
+      },
+      {
+        "type": "image",
+        "key": "rPuzzle1",
+        "url": "assets/res/abcPuzzle/r-1.png"
+      },
+      {
+        "type": "image",
+        "key": "sPuzzle1",
+        "url": "assets/res/abcPuzzle/s-1.png"
+      },
+      {
+        "type": "image",
+        "key": "tPuzzle1",
+        "url": "assets/res/abcPuzzle/t-1.png"
+      },
+      {
+        "type": "image",
+        "key": "uPuzzle1",
+        "url": "assets/res/abcPuzzle/u-1.png"
+      },
+      {
+        "type": "image",
+        "key": "vPuzzle1",
+        "url": "assets/res/abcPuzzle/v-1.png"
+      },
+      {
+        "type": "image",
+        "key": "wPuzzle1",
+        "url": "assets/res/abcPuzzle/w-1.png"
+      },
+      {
+        "type": "image",
+        "key": "xPuzzle1",
+        "url": "assets/res/abcPuzzle/x-1.png"
+      },
+      {
+        "type": "image",
+        "key": "yPuzzle1",
+        "url": "assets/res/abcPuzzle/y-1.png"
+      },
+      {
+        "type": "image",
+        "key": "zPuzzle1",
+        "url": "assets/res/abcPuzzle/z-1.png"
+      },
+      {
+        "type": "image",
+        "key": "ePuzzle3",
+        "url": "assets/res/abcPuzzle/e-3.png"
+      },
+      {
+        "type": "image",
+        "key": "fPuzzle3",
+        "url": "assets/res/abcPuzzle/f-3.png"
+      },
+      {
+        "type": "image",
+        "key": "gPuzzle3",
+        "url": "assets/res/abcPuzzle/g-3.png"
+      },
+      {
+        "type": "image",
+        "key": "hPuzzle3",
+        "url": "assets/res/abcPuzzle/h-3.png"
+      },
+      {
+        "type": "image",
+        "key": "iPuzzle3",
+        "url": "assets/res/abcPuzzle/i-3.png"
+      },
+      {
+        "type": "image",
+        "key": "jPuzzle3",
+        "url": "assets/res/abcPuzzle/j-3.png"
+      },
+      {
+        "type": "image",
+        "key": "kPuzzle3",
+        "url": "assets/res/abcPuzzle/k-3.png"
+      },
+      {
+        "type": "image",
+        "key": "lPuzzle3",
+        "url": "assets/res/abcPuzzle/l-3.png"
+      },
+      {
+        "type": "image",
+        "key": "mPuzzle3",
+        "url": "assets/res/abcPuzzle/m-3.png"
+      },
+      {
+        "type": "image",
+        "key": "nPuzzle3",
+        "url": "assets/res/abcPuzzle/n-3.png"
+      },
+      {
+        "type": "image",
+        "key": "oPuzzle3",
+        "url": "assets/res/abcPuzzle/o-3.png"
+      },
+      {
+        "type": "image",
+        "key": "pPuzzle3",
+        "url": "assets/res/abcPuzzle/p-3.png"
+      },
+      {
+        "type": "image",
+        "key": "qPuzzle3",
+        "url": "assets/res/abcPuzzle/q-3.png"
+      },
+      {
+        "type": "image",
+        "key": "rPuzzle3",
+        "url": "assets/res/abcPuzzle/r-3.png"
+      },
+      {
+        "type": "image",
+        "key": "sPuzzle3",
+        "url": "assets/res/abcPuzzle/s-3.png"
+      },
+      {
+        "type": "image",
+        "key": "tPuzzle3",
+        "url": "assets/res/abcPuzzle/t-3.png"
+      },
+      {
+        "type": "image",
+        "key": "uPuzzle3",
+        "url": "assets/res/abcPuzzle/u-3.png"
+      },
+      {
+        "type": "image",
+        "key": "vPuzzle3",
+        "url": "assets/res/abcPuzzle/v-3.png"
+      },
+      {
+        "type": "image",
+        "key": "wPuzzle3",
+        "url": "assets/res/abcPuzzle/w-3.png"
+      },
+      {
+        "type": "image",
+        "key": "xPuzzle3",
+        "url": "assets/res/abcPuzzle/x-3.png"
+      },
+      {
+        "type": "image",
+        "key": "yPuzzle3",
+        "url": "assets/res/abcPuzzle/y-3.png"
+      },
+      {
+        "type": "image",
+        "key": "zPuzzle3",
+        "url": "assets/res/abcPuzzle/z-3.png"
+      },
+      {
+        "type": "image",
+        "key": "ePuzzle4",
+        "url": "assets/res/abcPuzzle/e-4.png"
+      },
+      {
+        "type": "image",
+        "key": "fPuzzle4",
+        "url": "assets/res/abcPuzzle/f-4.png"
+      },
+      {
+        "type": "image",
+        "key": "gPuzzle4",
+        "url": "assets/res/abcPuzzle/g-4.png"
+      },
+      {
+        "type": "image",
+        "key": "hPuzzle4",
+        "url": "assets/res/abcPuzzle/h-4.png"
+      },
+      {
+        "type": "image",
+        "key": "iPuzzle4",
+        "url": "assets/res/abcPuzzle/i-4.png"
+      },
+      {
+        "type": "image",
+        "key": "jPuzzle4",
+        "url": "assets/res/abcPuzzle/j-4.png"
+      },
+      {
+        "type": "image",
+        "key": "kPuzzle4",
+        "url": "assets/res/abcPuzzle/k-4.png"
+      },
+      {
+        "type": "image",
+        "key": "lPuzzle4",
+        "url": "assets/res/abcPuzzle/l-4.png"
+      },
+      {
+        "type": "image",
+        "key": "mPuzzle4",
+        "url": "assets/res/abcPuzzle/m-4.png"
+      },
+      {
+        "type": "image",
+        "key": "nPuzzle4",
+        "url": "assets/res/abcPuzzle/n-4.png"
+      },
+      {
+        "type": "image",
+        "key": "oPuzzle4",
+        "url": "assets/res/abcPuzzle/o-4.png"
+      },
+      {
+        "type": "image",
+        "key": "pPuzzle4",
+        "url": "assets/res/abcPuzzle/p-4.png"
+      },
+      {
+        "type": "image",
+        "key": "qPuzzle4",
+        "url": "assets/res/abcPuzzle/q-4.png"
+      },
+      {
+        "type": "image",
+        "key": "rPuzzle4",
+        "url": "assets/res/abcPuzzle/r-4.png"
+      },
+      {
+        "type": "image",
+        "key": "sPuzzle4",
+        "url": "assets/res/abcPuzzle/s-4.png"
+      },
+      {
+        "type": "image",
+        "key": "tPuzzle4",
+        "url": "assets/res/abcPuzzle/t-4.png"
+      },
+      {
+        "type": "image",
+        "key": "uPuzzle4",
+        "url": "assets/res/abcPuzzle/u-4.png"
+      },
+      {
+        "type": "image",
+        "key": "vPuzzle4",
+        "url": "assets/res/abcPuzzle/v-4.png"
+      },
+      {
+        "type": "image",
+        "key": "wPuzzle4",
+        "url": "assets/res/abcPuzzle/w-4.png"
+      },
+      {
+        "type": "image",
+        "key": "xPuzzle4",
+        "url": "assets/res/abcPuzzle/x-4.png"
+      },
+      {
+        "type": "image",
+        "key": "yPuzzle4",
+        "url": "assets/res/abcPuzzle/y-4.png"
+      },
+      {
+        "type": "image",
+        "key": "zPuzzle4",
+        "url": "assets/res/abcPuzzle/z-4.png"
+      },
+      {
+        "type": "image",
+        "key": "ePuzzle2",
+        "url": "assets/res/abcPuzzle/e-2.png"
+      },
+      {
+        "type": "image",
+        "key": "fPuzzle2",
+        "url": "assets/res/abcPuzzle/f-2.png"
+      },
+      {
+        "type": "image",
+        "key": "gPuzzle2",
+        "url": "assets/res/abcPuzzle/g-2.png"
+      },
+      {
+        "type": "image",
+        "key": "hPuzzle2",
+        "url": "assets/res/abcPuzzle/h-2.png"
+      },
+      {
+        "type": "image",
+        "key": "iPuzzle2",
+        "url": "assets/res/abcPuzzle/i-2.png"
+      },
+      {
+        "type": "image",
+        "key": "jPuzzle2",
+        "url": "assets/res/abcPuzzle/j-2.png"
+      },
+      {
+        "type": "image",
+        "key": "kPuzzle2",
+        "url": "assets/res/abcPuzzle/k-2.png"
+      },
+      {
+        "type": "image",
+        "key": "lPuzzle2",
+        "url": "assets/res/abcPuzzle/l-2.png"
+      },
+      {
+        "type": "image",
+        "key": "mPuzzle2",
+        "url": "assets/res/abcPuzzle/m-2.png"
+      },
+      {
+        "type": "image",
+        "key": "nPuzzle2",
+        "url": "assets/res/abcPuzzle/n-2.png"
+      },
+      {
+        "type": "image",
+        "key": "oPuzzle2",
+        "url": "assets/res/abcPuzzle/o-2.png"
+      },
+      {
+        "type": "image",
+        "key": "pPuzzle2",
+        "url": "assets/res/abcPuzzle/p-2.png"
+      },
+      {
+        "type": "image",
+        "key": "qPuzzle2",
+        "url": "assets/res/abcPuzzle/q-2.png"
+      },
+      {
+        "type": "image",
+        "key": "rPuzzle2",
+        "url": "assets/res/abcPuzzle/r-2.png"
+      },
+      {
+        "type": "image",
+        "key": "sPuzzle2",
+        "url": "assets/res/abcPuzzle/s-2.png"
+      },
+      {
+        "type": "image",
+        "key": "tPuzzle2",
+        "url": "assets/res/abcPuzzle/t-2.png"
+      },
+      {
+        "type": "image",
+        "key": "uPuzzle2",
+        "url": "assets/res/abcPuzzle/u-2.png"
+      },
+      {
+        "type": "image",
+        "key": "vPuzzle2",
+        "url": "assets/res/abcPuzzle/v-2.png"
+      },
+      {
+        "type": "image",
+        "key": "wPuzzle2",
+        "url": "assets/res/abcPuzzle/w-2.png"
+      },
+      {
+        "type": "image",
+        "key": "xPuzzle2",
+        "url": "assets/res/abcPuzzle/x-2.png"
+      },
+      {
+        "type": "image",
+        "key": "yPuzzle2",
+        "url": "assets/res/abcPuzzle/y-2.png"
+      },
+      {
+        "type": "image",
+        "key": "zPuzzle2",
+        "url": "assets/res/abcPuzzle/z-2.png"
+      }
+    ]
+  }
+}

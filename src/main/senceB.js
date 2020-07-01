@@ -8,7 +8,7 @@ class SenceB extends Phaser.Scene {
     }
 
     create() {
-        var senceA = this.scene.get('SenceA');
+        var senceA = this.scene.get('WellcomeScene');
         senceA.setTitleGame(this);
 
         var puzzlesBtn = this.add.image(game.config.width / 8, game.config.height / 1.71, 'lits', 'puzzlesBtn_c');
@@ -24,7 +24,7 @@ class SenceB extends Phaser.Scene {
         }, this);
         var returnBtn = this.addReturnBtn(this);
         returnBtn.setInteractive().on('pointerdown', function () {
-            this.scene.start('SenceA');
+            this.scene.start('WellcomeScene');
         }, this);
     }
     addReturnBtn(object) {

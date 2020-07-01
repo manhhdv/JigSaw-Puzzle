@@ -1,0 +1,31 @@
+{
+  "sound": {
+    "files": [
+      {
+        "type": "audio",
+        "key": "bg",
+        "url": "assets/res/Music/bg.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "bingo",
+        "url": "assets/res/Music/bingo.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "btn",
+        "url": "assets/res/Music/btn.m4a"
+      },
+      {
+        "type": "audio",
+        "key": "btnReady",
+        "url": "assets/res/Music/btnReady.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "pick",
+        "url": "assets/res/Music/pick.mp3"
+      }
+    ]
+  }
+}

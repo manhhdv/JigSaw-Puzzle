@@ -19,13 +19,25 @@ class AbcLoader extends Phaser.Scene {
 
     addAbc(object, sence) {
         var abcBtn = [];
-        var frame_abc = ['c', 'd'];
+        var a = -1;
+
+        var frame_abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         for (var i = 0; i < frame_abc.length; i++) {
             let nameabc = frame_abc[i];
-            object.add.image(game.config.width / 25.6 + 180 * i, game.config.height / 4, 'lits', 'chooseBtn_r');
-            abcBtn[i] = object.add.image(game.config.width / 25.6 + 40 + 180 * i, game.config.height / 4 + 60, 'abc', frame_abc[i]);
-            abcBtn[i].setRotation(-Math.PI / 2);
+            if (i % 6 == 0) a++;
+            if (i!=6&&i!=14) {
+            object.add.image(game.config.width / 25.6 + 180 * (i % 6), game.config.height / 4 + a * 100, 'lits', 'chooseBtn_r');
+            abcBtn[i] = object.add.image(game.config.width / 25.6 + 30 + 180 * (i % 6), game.config.height / 4 + 60 + a * 100, 'abc', frame_abc[i]);
+
+               abcBtn[i].setRotation(-Math.PI / 2);
+            }
+            else {
+                object.add.image(game.config.width / 25.6 + 180 * (i % 6), game.config.height / 4 + a * 100, 'lits', 'chooseBtn_r');
+                abcBtn[i] = object.add.image(game.config.width / 25.6 + 30 + 180 * (i % 6), game.config.height / 4 + 60-47 + a * 100, 'abc', frame_abc[i]);
+
+            }
         }
+
         for (var i = 0; i < abcBtn.length; i++) {
             this.setAbcBtnEvent(this, sence, abcBtn[i], frame_abc, i);
         }

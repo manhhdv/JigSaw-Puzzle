@@ -7,7 +7,7 @@ window.onload = function() {
         parent: '',
         backgroundColor: 0xfffdf0,
         // scene: [bootGame,AnphabetGame]
-        scene: [bootGame,SenceA,SenceB,AbcLoader,Puzzles,AnphabetCard,AnphabetGame,PuzzleGame]
+        scene: [bootGame,WellcomeScene,SenceB,AbcLoader,Puzzles,AnphabetCard,AnphabetGame,PuzzleGame]
     }
     game = new Phaser.Game(gameconfig);
     window.focus();
