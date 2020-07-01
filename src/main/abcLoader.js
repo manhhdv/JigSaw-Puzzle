@@ -27,16 +27,19 @@ class AbcLoader extends Phaser.Scene {
             abcBtn[i].setRotation(-Math.PI / 2);
         }
         for (var i = 0; i < abcBtn.length; i++) {
-            this.setAbcBtnEvent(this,sence,abcBtn[i],frame_abc[i]);
+            this.setAbcBtnEvent(this, sence, abcBtn[i], frame_abc, i);
         }
+
     }
-    setAbcBtnEvent(object,sence,abcBtn,data){
+
+    setAbcBtnEvent(object, sence, abcBtn, data, index) {
         console.log(sence);
         abcBtn.setInteractive().on('pointerdown', function () {
-            object.scene.start(sence,{name_image:data});
-        },object);
+            object.scene.start(sence, {frameAbc: data, indexImg: index});
+        }, object);
     }
-    setReturnBtn(object){
+
+    setReturnBtn(object) {
         let senceB = object.scene.get('SenceB');
         let re = senceB.addReturnBtn(object);
         re.setInteractive().on('pointerdown', function () {
