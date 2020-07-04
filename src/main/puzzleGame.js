@@ -12,10 +12,11 @@ class PuzzleGame extends Phaser.Scene {
             this.id_img_next = data.indexImg+1;
         }
         console.log(this.id_img_next,this.id_img);
+        this.coutDrop;
     }
 
     create() {
-
+        this.coutDrop=0;
         this.setBg(this);
         this.setAbcImange(this, this.id_img + 'PuzzleOra');
         this.gameBg(this);
@@ -74,7 +75,10 @@ class PuzzleGame extends Phaser.Scene {
             gameObject.y = pointer.y;
             sceneName.children.bringToTop(gameObject);
         });
-        this.startDrag(abcPuzzle);
+        abcPuzzle.on('dragstart', function (pointer, gameObject) {
+            abcPuzzle.setScale(1);
+            abcPuzzle.setAngle(0);
+        })
         this.input.on('dragend', function (pointer, gameObject, dropped) {
             if (!dropped) {
                 gameObject.x = gameObject.input.dragStartX;
@@ -83,15 +87,18 @@ class PuzzleGame extends Phaser.Scene {
                 gameObject.setAngle(Phaser.Math.Between(20, 360));
             }
         });
-        this.input.on('drop', function (pointer, gameObject, dropZone, target) {
-            // gameObject.x-=200;
-            // gameObject.y-=100;
+        this.input.on('drop', function (pointer, gameObject, dropZone) {
             if (dropZone.name === gameObject.name) {
                 gameObject.x = dropZone.x;
                 gameObject.y = dropZone.y;
                 gameObject.input.enabled = false;
-                countMode++;
-                console.log(countMode);
+                this.coutDrop++;
+                if (this.coutDrop==16){
+                    this.playAbcSound();
+
+                }
+
+
             } else {
                 gameObject.x = gameObject.input.dragStartX;
                 gameObject.y = gameObject.input.dragStartY;
@@ -99,9 +106,15 @@ class PuzzleGame extends Phaser.Scene {
                 gameObject.setScale(0.3);
                 gameObject.setAngle(Phaser.Math.Between(20, 290));
             }
+        },this);
+
+
+    }
+    playAbcSound(){
+        var abcSound=this.sound.add(this.id_img+'Sound');
+        abcSound.play({
+            loop:false
         });
-
-
     }
 
     setBg(object) {
@@ -117,7 +130,6 @@ class PuzzleGame extends Phaser.Scene {
         select_bg.setOrigin(0);
         var selectBorder = object.add.image(game.config.width / 1.4, game.config.height / 9, 'selectBorder');
         selectBorder.setOrigin(0);
-        // var nextBtn=object.add.image(game.config.width/1.45,game.config.height/1.2,'lits','nextBtn');
     }
 
     setAbcImange(object, nameImg) {
@@ -135,8 +147,9 @@ class PuzzleGame extends Phaser.Scene {
         let senceB = object.scene.get('SenceB');
         let re = senceB.addReturnBtn(object);
         re.setInteractive().on('pointerdown', function () {
-            object.scene.start('SenceB');
-        }, object);
+            this.clickSound(object);
+            object.scene.start('Puzzles');
+        }, this);
         return re;
     }
 
@@ -153,5 +166,13 @@ class PuzzleGame extends Phaser.Scene {
             [a[i], a[j]] = [a[j], a[i]];
         }
         return a;
+    }
+    clickSound(sceneName) {
+        var clickSound = sceneName.sound.add('btn');
+        var configSound = {
+            loop: false
+        };
+        clickSound.play(configSound);
+        return clickSound;
     }
 }

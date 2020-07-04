@@ -9,21 +9,30 @@ class SenceB extends Phaser.Scene {
 
     create() {
         var senceA = this.scene.get('WellcomeScene');
+        var clickSound = this.sound.add('btn');
+        var configSound = {
+            loop: false
+        };
         senceA.setTitleGame(this);
 
         var puzzlesBtn = this.add.image(game.config.width / 8, game.config.height / 1.71, 'lits', 'puzzlesBtn_c');
 
         puzzlesBtn.setInteractive().on('pointerdown', function () {
+            clickSound.play(configSound);
+            this.scene.sleep();
             this.scene.start('Puzzles');
         }, this);
         var acBtn = this.add.image(game.config.width / 1.8, game.config.height / 1.71 + 176, 'lits', 'acBtn_c');
         acBtn.setRotation(-Math.PI / 2);
-
         acBtn.setInteractive().on('pointerdown', function () {
+            clickSound.play(configSound);
+            this.scene.sleep();
             this.scene.start('AnphabetCard');
         }, this);
         var returnBtn = this.addReturnBtn(this);
         returnBtn.setInteractive().on('pointerdown', function () {
+            clickSound.play(configSound);
+            this.scene.sleep();
             this.scene.start('WellcomeScene');
         }, this);
     }

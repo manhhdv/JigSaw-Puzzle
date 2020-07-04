@@ -25,6 +25,132 @@
         "type": "audio",
         "key": "pick",
         "url": "assets/res/Music/pick.mp3"
+      },{
+        "type": "audio",
+        "key": "aSound",
+        "url": "assets/res/abcSe/A is for apple.mp3"
+      },{
+        "type": "audio",
+        "key": "bSound",
+        "url": "assets/res/abcSe/B is for Bird.mp3"
+      },{
+        "type": "audio",
+        "key": "cSound",
+        "url": "assets/res/abcSe/C is for Cat.mp3"
+      },{
+        "type": "audio",
+        "key": "dSound",
+        "url": "assets/res/abcSe/D is for Dog.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "eSound",
+        "url": "assets/res/abcSe/E is for elephant.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "fSound",
+        "url": "assets/res/abcSe/F is for fish.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "gSound",
+        "url": "assets/res/abcSe/G is for goose.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "hSound",
+        "url": "assets/res/abcSe/H is for horse.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "iSound",
+        "url": "assets/res/abcSe/I is for Indian.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "jSound",
+        "url": "assets/res/abcSe/J is for Juice.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "kSound",
+        "url": "assets/res/abcSe/K is for kite.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "lSound",
+        "url": "assets/res/abcSe/L is for lion.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "mSound",
+        "url": "assets/res/abcSe/M is for Moon.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "nSound",
+        "url": "assets/res/abcSe/N is for nurse.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "oSound",
+        "url": "assets/res/abcSe/O is for Octopus.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "pSound",
+        "url": "assets/res/abcSe/P is for pig.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "qSound",
+        "url": "assets/res/abcSe/Q is for queen.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "rSound",
+        "url": "assets/res/abcSe/R is for rabbit.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "sSound",
+        "url": "assets/res/abcSe/S is for snake.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "tSound",
+        "url": "assets/res/abcSe/T is for turtle.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "uSound",
+        "url": "assets/res/abcSe/U is for umbrella.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "vSound",
+        "url": "assets/res/abcSe/V is for Violin.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "wSound",
+        "url": "assets/res/abcSe/W is for witch.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "xSound",
+        "url": "assets/res/abcSe/X is for fox.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "ySound",
+        "url": "assets/res/abcSe/Y is for yoyo.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "zSound",
+        "url": "assets/res/abcSe/Z is for zebra.mp3"
       }
     ]
   }
