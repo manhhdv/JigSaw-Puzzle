@@ -399,6 +399,82 @@
         "x": 0,
         "y": 0
       }
+    },
+    {
+      "filename": "nextBtn1",
+      "frame": {
+        "x": 679,
+        "y": 607,
+        "w": 117,
+        "h": 194
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 117,
+        "h": 194
+      },
+      "sourceSize": {
+        "w": 117,
+        "h": 194
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "preBtn",
+      "frame": {
+        "x": 820,
+        "y": 912,
+        "w": 189,
+        "h": 111
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 189,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 189,
+        "h": 111
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "replayBtn",
+      "frame": {
+        "x": 645,
+        "y": 526,
+        "w": 81,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 81,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 81,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
     }
+
   ]
 }
