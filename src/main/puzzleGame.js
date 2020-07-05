@@ -4,56 +4,59 @@ class PuzzleGame extends Phaser.Scene {
     }
 
     init(data) {
-        this.listAbc=data.frameAbc;
+        this.listAbc = data.frameAbc;
         this.id_img = data.frameAbc[data.indexImg];
-        if (data.indexImg==(data.frameAbc.length-1)){
-            this.id_img_next=0
+        if (data.indexImg == (data.frameAbc.length - 1)) {
+            this.id_img_next = 0
         } else {
-            this.id_img_next = data.indexImg+1;
+            this.id_img_next = data.indexImg + 1;
         }
-        console.log(this.id_img_next,this.id_img);
+        console.log(this.id_img_next, this.id_img);
         this.coutDrop;
     }
 
     create() {
-        this.coutDrop=0;
+        this.coutDrop = 0;
         this.setBg(this);
+        var sceneB = this.scene.get('SenceB');
+        sceneB.addCloud(this);
         this.setAbcImange(this, this.id_img + 'PuzzleOra');
         this.gameBg(this);
-        var nextBtn=this.setNextBtn(this).setInteractive();
-        nextBtn.on('pointerdown',function () {
+        var nextBtn = this.setNextBtn(this).setInteractive();
+        nextBtn.on('pointerdown', function () {
+            let clickSound = this.sound.add('btn');
+            clickSound.play({loop: false});
             this.scene.start("PuzzleGame", {frameAbc: this.listAbc, indexImg: this.id_img_next});
-        },this);
+        }, this);
 
         this.setreturnBtn(this);
-        // 4/3,4.8
         var position = {
             '1': [1.23, 5],
             '2': [1.18, 2.5],
             '3': [1.32, 2.5],
             '4': [1.23, 1.85]
         };
-        var dropPosition={
+        var dropPosition = {
             '1': [522, 477],
             '2': [582, 271],
-            '3': [309,219],
-            '4': [253,432]
+            '3': [309, 219],
+            '4': [253, 432]
         }
-        var abcPuzzle = [1,2,3,4];
-        abcPuzzle=this.shuffle(abcPuzzle);
-        for (let i=0;i<4;i++){
-            let x=position[i+1][0];
-            let y=position[i+1][1];
-            let dx=dropPosition[abcPuzzle[i]][0];
-            let dy=dropPosition[abcPuzzle[i]][1];
-            this.createPuzzle(this,this.id_img+'Puzzle'+abcPuzzle[i],x,y,dx,dy,abcPuzzle[i])
+        var abcPuzzle = [1, 2, 3, 4];
+        abcPuzzle = this.shuffle(abcPuzzle);
+        for (let i = 0; i < 4; i++) {
+            let x = position[i + 1][0];
+            let y = position[i + 1][1];
+            let dx = dropPosition[abcPuzzle[i]][0];
+            let dy = dropPosition[abcPuzzle[i]][1];
+            this.createPuzzle(this, this.id_img + 'Puzzle' + abcPuzzle[i], x, y, dx, dy, abcPuzzle[i])
         }
     }
 
-    createPuzzle(sceneName,name,positionX,positionY,dropPositionX,dropPositionY,key){
-        let puzzle=sceneName.setAbcPuzzle(this, name,positionX, positionY).setInteractive();
+    createPuzzle(sceneName, name, positionX, positionY, dropPositionX, dropPositionY, key) {
+        let puzzle = sceneName.setAbcPuzzle(this, name, positionX, positionY).setInteractive();
         puzzle.setName(key);
-        this.setDragandDrop(sceneName,puzzle,key,dropPositionX,dropPositionY);
+        this.setDragandDrop(sceneName, puzzle, key, dropPositionX, dropPositionY);
         return puzzle;
     }
 
@@ -64,8 +67,8 @@ class PuzzleGame extends Phaser.Scene {
         })
     }
 
-    setDragandDrop(sceneName, abcPuzzle,name ,ax, by) {
-        var countMode=0;
+    setDragandDrop(sceneName, abcPuzzle, name, ax, by) {
+        var countMode = 0;
         sceneName.input.setDraggable(abcPuzzle);
         var zone = sceneName.add.zone(ax, by, 336, 275).setDropZone();
         zone.setName(name);
@@ -81,39 +84,79 @@ class PuzzleGame extends Phaser.Scene {
         })
         this.input.on('dragend', function (pointer, gameObject, dropped) {
             if (!dropped) {
-                gameObject.x = gameObject.input.dragStartX;
-                gameObject.y = gameObject.input.dragStartY;
-                gameObject.setScale(0.3);
-                gameObject.setAngle(Phaser.Math.Between(20, 360));
+                sceneName.tweens.add({
+                    targets: gameObject,
+                    x: gameObject.input.dragStartX,
+                    y: gameObject.input.dragStartY,
+                    scale: 0.3,
+                    angle: Phaser.Math.Between(20, 290),
+                    ease: 'Bounce.easeIn',
+                    duration: 1500,
+                    delay: 0,
+                    repeat: 0,
+
+                    hold: 1000
+                });
             }
         });
         this.input.on('drop', function (pointer, gameObject, dropZone) {
             if (dropZone.name === gameObject.name) {
-                gameObject.x = dropZone.x;
-                gameObject.y = dropZone.y;
+                this.tweens.timeline({
+                    tweens: [
+                        {
+                            targets: gameObject,
+                            x: dropZone.x,
+                            y: dropZone.y,
+                            scale: '+=0.2',
+                            duration: 300,
+                            ease: 'Sine.easeInOut',
+                            delay: 0,
+                            paused: false,
+                            repeat: 0
+                        },
+                        {
+                            targets: gameObject,
+                            scale: '-=0.2',
+                            duration: 300,
+                            ease: 'Sine.easeInOut',
+                            delay: 0,
+                            paused: false,
+                            repeat: 0
+                        }
+                    ]
+                });
                 gameObject.input.enabled = false;
                 this.coutDrop++;
-                if (this.coutDrop==16){
-                    this.playAbcSound();
-
+                if (this.coutDrop % 4 == 0) {
+                    let droppedSound = sceneName.sound.add('bingo');
+                    droppedSound.play({
+                        loop: false
+                    });
                 }
-
-
+                if (this.coutDrop == 16) {
+                    this.playAbcSound();
+                }
             } else {
-                gameObject.x = gameObject.input.dragStartX;
-                gameObject.y = gameObject.input.dragStartY;
-
-                gameObject.setScale(0.3);
-                gameObject.setAngle(Phaser.Math.Between(20, 290));
+                sceneName.tweens.add({
+                    targets: gameObject,
+                    x: gameObject.input.dragStartX,
+                    y: gameObject.input.dragStartY,
+                    scale: 0.3,
+                    angle: Phaser.Math.Between(20, 290),
+                    ease: 'Bounce.easeIn',
+                    duration: 1500,
+                    delay: 0,
+                    repeat: 0,
+                    hold: 1000
+                });
             }
-        },this);
-
-
+        }, this);
     }
-    playAbcSound(){
-        var abcSound=this.sound.add(this.id_img+'Sound');
+
+    playAbcSound() {
+        var abcSound = this.sound.add(this.id_img + 'Sound');
         abcSound.play({
-            loop:false
+            loop: false,
         });
     }
 
@@ -155,7 +198,6 @@ class PuzzleGame extends Phaser.Scene {
 
     setAbcPuzzle(object, name, ax, ay) {
         var abcPuzzle = object.add.image(game.config.width / ax, game.config.height / ay, name).setScale(0.3);
-        // abcPuzzle.setOrigin(0);
         abcPuzzle.setAngle(Phaser.Math.Between(20, 360));
         return abcPuzzle;
     }
@@ -167,6 +209,7 @@ class PuzzleGame extends Phaser.Scene {
         }
         return a;
     }
+
     clickSound(sceneName) {
         var clickSound = sceneName.sound.add('btn');
         var configSound = {

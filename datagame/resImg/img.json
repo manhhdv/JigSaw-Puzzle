@@ -35,6 +35,11 @@
         "type": "image",
         "key": "selectBorder",
         "url": "assets/res/selectBorder.png"
+      },
+      {
+        "type": "image",
+        "key": "block",
+        "url": "assets/res/block.png"
       }
     ]
   }

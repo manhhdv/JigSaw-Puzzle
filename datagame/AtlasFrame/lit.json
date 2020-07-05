@@ -246,8 +246,8 @@
         "w": 211
       },
       "pivot": {
-        "x": 0,
-        "y": 0
+        "x": 0.5,
+        "y": 0.5
       }
     },
     {
@@ -474,7 +474,56 @@
         "x": 0.5,
         "y": 0.5
       }
+    },
+    {
+      "filename": "pauseBtn_c",
+      "frame": {
+        "x": 357,
+        "y": 853,
+        "w": 141,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 141,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 141,
+        "h": 83
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "pauseBtn_r",
+      "frame": {
+        "x": 498,
+        "y": 853,
+        "w": 141,
+        "h": 83
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 141,
+        "h": 83
+      },
+      "sourceSize": {
+        "w": 141,
+        "h": 83
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
     }
-
   ]
 }
