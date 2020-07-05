@@ -45,6 +45,7 @@ class AnphabetGame extends Phaser.Scene {
 
         var replayBtn = this.setReplayBtn(this).setInteractive();
         replayBtn.on('pointerdown', function () {
+            this.initTime = 6;
             abcSound.stop();
             abcSound.play({
                 loop: false
