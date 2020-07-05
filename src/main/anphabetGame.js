@@ -40,6 +40,7 @@ class AnphabetGame extends Phaser.Scene {
         preBtn.on('pointerdown', function () {
             abcSound.stop();
             this.scene.sleep();
+             this.initTime = 6;
             this.scene.start("AnphabetGame", {frameAbc: this.listAbc, indexImg: this.id_img_pre});
         }, this);
 
@@ -56,6 +57,7 @@ class AnphabetGame extends Phaser.Scene {
         nextBtn.on('pointerdown', function () {
             abcSound.stop();
             this.scene.sleep();
+             this.initTime = 6;
             this.scene.start("AnphabetGame", {frameAbc: this.listAbc, indexImg: this.id_img_next});
         }, this);
         var pauseBtn = this.setPauseBtn(this).setInteractive();
