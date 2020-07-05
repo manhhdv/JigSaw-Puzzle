@@ -64,6 +64,7 @@ class PuzzleGame extends Phaser.Scene {
         img.on('dragstart', function (pointer, gameObject) {
             img.setScale(1);
             img.setAngle(0);
+            
         })
     }
 
@@ -79,6 +80,10 @@ class PuzzleGame extends Phaser.Scene {
             sceneName.children.bringToTop(gameObject);
         });
         abcPuzzle.on('dragstart', function (pointer, gameObject) {
+            let pickSound = sceneName.sound.add('pick');
+                    pickSound.play({
+                        loop: false
+                    });
             abcPuzzle.setScale(1);
             abcPuzzle.setAngle(0);
         })
