@@ -48,7 +48,7 @@ Trang thông tin : <a href="https://www.phaser.io/">Phaser.io </a>
 
 1. Clone the repo
 ```sh
-git clone https://github.com/manhdvuetk63/JigSaw-Puzzle.git
+git clone https://github.com/manhhdv/JigSaw-Puzzle.git
 ```
 2. Chạy project
 Chọn một trình biên dịch hỗ trợ phát triển ứng dụng web, tiêu biểu như: Sublime Text, Atom, Visual Studio Code, Brackets, WebStorm,... Sau đó chạy file index.html
@@ -61,7 +61,7 @@ Chọn một trình biên dịch hỗ trợ phát triển ứng dụng web, tiê
 
 Đặng Văn Mạnh- [@facebook](https://www.facebook.com/dvmanhuet) - email: natrihoatri1@gmail.com / manhdvvnu@gmail.com
 
-Project Link: [https://github.com/manhdvuetk63/JigSaw-Puzzle](https://github.com/manhdvuetk63/JigSaw-Puzzle)
+Project Link: [https://github.com/manhhdv/JigSaw-Puzzle](https://github.com/manhdvuetk63/JigSaw-Puzzle)
 
 
 
